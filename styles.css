@@ -1,0 +1,90 @@
+/* Estilos sencillos para que se parezca a las capturas del enunciado */
+
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.contenedor {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Tabla de productos */
+.productos {
+  flex: 2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 5px;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 5px;
+}
+
+td small {
+  color: #777;
+}
+
+td button {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+td span {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+/* Cuadro del total */
+.carrito {
+  flex: 1;
+  background-color: #e0e0e0;
+  padding: 15px 20px;
+  align-self: flex-start;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito li,
+.linea-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.linea-total {
+  border-top: 1px solid #999;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* En pantallas pequeñas pongo el total debajo */
+@media (max-width: 700px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}

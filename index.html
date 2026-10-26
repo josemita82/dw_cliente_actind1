@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgoodShop - Carrito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>AgoodShop</h1>
+  </header>
+
+  <div class="contenedor">
+
+    <!-- Tabla con los productos (las filas se crean desde app.js) -->
+    <section class="productos">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Pr. Unidad</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="lista-productos"></tbody>
+      </table>
+      <p id="mensaje">Cargando productos...</p>
+    </section>
+
+    <!-- Cuadro resumen del carrito -->
+    <section class="carrito">
+      <h2>Total</h2>
+      <ul id="resumen-carrito"></ul>
+      <div class="linea-total">
+        <span>TOTAL</span>
+        <span id="precio-total">0€</span>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
